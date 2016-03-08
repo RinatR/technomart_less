@@ -1,0 +1,47 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet",  href="css/normalize.css")
+    link(rel="stylesheet",  href="css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Cuprum&amp;subset=latin,cyrillic", rel="stylesheet", type="text/css")
+    link(href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,cyrillic",  rel="stylesheet", type="text/css")
+  body
+    header.main-header
+      div.header-top-row.clearfix
+        div.layout-center
+          div.header-element.logo Техномарт
+            span.icon-search
+          input.header-element.search(type="search", placeholder="Поиск")
+          a.header-element.bookmarks(href="#") Закладки
+          a.header-element.basket(href="#") Корзина
+          div.header-element.checkout
+            a(href="#") Оформить заказ
+      div.header-middle-row.clearfix
+        div.left-column
+          p Интернет-магазин строительных материалов и инструментов для ремонта
+        div.center-column
+          div.phone +7 812 555-05-55
+          span.address г.Санкт-Петербург, ул. Б.Конюшенная 19/8
+        div.right-column
+          a.btn.btn-login(href="#") Войти
+          a.btn.btn-register(href="#") Регистрация
+      div.header-bottom-row
+        nav.menu
+          a.menu-item(href="#") Главная
+          a.menu-item(href="#") Компания
+          a.menu-item(href="#") Каталог
+          a.menu-item(href="#") Новости
+          a.menu-item(href="#") Спецпредложения
+          a.menu-item(href="#") Доставка
+          a.menu-item(href="#") Контакты
+    main.main-content
+      section.promo
+      section.popular.products
+      section.popular.brands
+      section.services
+      section.info
+    footer.footer
+      div.footer-top-row
+      div.footer-bottom-row
+

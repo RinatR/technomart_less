@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "symbols-technomart";
+  src: url("../font/symbols-technomart.eot?22619757");
+  src: url("../font/symbols-technomart.eot?22619757#iefix") format("embedded-opentype"), url("../font/symbols-technomart.woff?22619757") format("woff"), url("../font/symbols-technomart.ttf?22619757") format("truetype"), url("../font/symbols-technomart.svg?22619757#symbols-technomart") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "symbols-technomart";
+    src: url("../font/symbols-technomart.svg?22619757#symbols-technomart") format("svg");
+  }
+}
+*/
+.icons,
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "symbols-technomart";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-left:before {
+  content: "\3c";
+}
+/* "&lt;" */
+.icon-right:before {
+  content: "\3e";
+}
+/* "&gt;" */
+.icon-basket:before {
+  content: "\62";
+}
+/* "b" */
+.icon-facebook:before {
+  content: "\66";
+}
+/* "f" */
+.icon-twitter:before {
+  content: "\74";
+}
+/* "t" */
+.icon-vk:before {
+  content: "\76";
+}
+/* "v" */
+.icon-up:before {
+  content: "\2c4";
+}
+/* "˄" */
+.icon-down:before {
+  content: "\2c5";
+}
+/* "˅" */
+.icon-left-big:before {
+  content: "\2190";
+}
+/* "←" */
+.icon-right-big:before {
+  content: "\2192";
+}
+/* "→" */
+.icon-login:before {
+  content: "\2386";
+}
+/* "⎆" */
+.icon-logout:before {
+  content: "\241b";
+}
+/* "␛" */
+.icon-up-dir:before {
+  content: "\25b2";
+}
+/* "▲" */
+.icon-down-dir:before {
+  content: "\25bc";
+}
+/* "▼" */
+.icon-circle:before {
+  content: "\25cb";
+}
+/* "○" */
+.icon-circle-dot:before {
+  content: "\25cf";
+}
+/* "●" */
+.icon-star:before {
+  content: "\2605";
+}
+/* "★" */
+.icon-check-off:before {
+  content: "\2610";
+}
+/* "☐" */
+.icon-check-on:before {
+  content: "\2611";
+}
+/* "☑" */
+.icon-youtube:before {
+  content: "\f39e";
+}
+/* "" */
+.icon-home:before {
+  content: "🏠";
+}
+/* "\1f3e0" */
+.icon-user:before {
+  content: "👨";
+}
+/* "\1f468" */
+.icon-phone:before {
+  content: "📞";
+}
+/* "\1f4de" */
+.icon-instagramm:before {
+  content: "📷";
+}
+/* "\1f4f7" */
+.icon-search:before {
+  content: "🔍";
+}
+/* "\1f50d" */
+.icon-bookmark:before {
+  content: "🔖";
+}
+/* "\1f516" */
+body {
+  min-width: 960px;
+  font-size: 17px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: normal;
+  line-height: 18px;
+  color: #000000;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.layout-center {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-header {
+  background-color: #f1f5f7;
+}
+.main-header .header-top-row {
+  font-size: 0;
+  background-color: #293449;
+  color: #ffffff;
+}
+.main-header .header-top-row .header-element {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px 0;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.main-header .header-top-row .logo {
+  position: relative;
+  width: 220px;
+  padding: 9px 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ee3643;
+  box-shadow: 0 3px 0 0 #b52933;
+}
+.main-header .header-top-row .search {
+  width: 180px;
+  padding: 12px 20px;
+  padding-left: 40px;
+  color: #000000;
+  text-decoration: none;
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+.main-header .header-top-row .search:focus {
+  background-color: #ffffff;
+}
+.main-header .header-top-row .icon-search {
+  position: absolute;
+  top: 50%;
+  left: 230px;
+  transform: translateY(-50%);
+  font-size: 17px;
+  line-height: 18px;
+  color: #6a7180;
+  opacity: 0.3;
+}
+.main-header .header-top-row .bookmarks {
+  position: relative;
+  width: 80px;
+  padding-left: 55px;
+  padding-right: 25px;
+  text-decoration: none;
+}
+.main-header .header-top-row .bookmarks:before {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  content: "🔖";
+  font-family: "symbols-technomart";
+  font-size: 17px;
+  line-height: 18px;
+  color: #6a7180;
+  transform: translateY(-50%);
+}
+.main-header .header-top-row .basket {
+  position: relative;
+  width: 105px;
+  padding-left: 45px;
+  text-decoration: none;
+}
+.main-header .header-top-row .basket:before {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  content: "\62";
+  font-family: "symbols-technomart";
+  font-size: 17px;
+  line-height: 18px;
+  color: #6a7180;
+  transform: translateY(-50%);
+}
+.main-header .header-top-row .checkout {
+  width: 150px;
+  text-align: center;
+  background-color: #63a63e;
+}
+.main-header .header-top-row .checkout a {
+  text-decoration: none;
+  color: #ffffff;
+}
