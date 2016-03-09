@@ -17,22 +17,56 @@
         </div>
       </div>
       <div class="header-middle-row clearfix">
-        <div class="left-column">
-          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="layout-center">
+          <div class="left-column">
+            <p>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
+          </div>
+          <div class="center-column">
+            <div class="phone"><strong>+7 (812) 555-05-55</strong></div><span class="address">г.Санкт-Петербург, ул. Б.Конюшенная 19/8</span>
+          </div>
+          <div class="right-column"><a href="#" class="btn btn-login">Войти</a><a href="#" class="btn btn-register">Регистрация</a></div>
         </div>
-        <div class="center-column">
-          <div class="phone">+7 812 555-05-55</div><span class="address">г.Санкт-Петербург, ул. Б.Конюшенная 19/8</span>
-        </div>
-        <div class="right-column"><a href="#" class="btn btn-login">Войти</a><a href="#" class="btn btn-register">Регистрация</a></div>
       </div>
       <div class="header-bottom-row">
-        <nav class="menu"><a href="#" class="menu-item">Главная</a><a href="#" class="menu-item">Компания</a><a href="#" class="menu-item">Каталог</a><a href="#" class="menu-item">Новости</a><a href="#" class="menu-item">Спецпредложения</a><a href="#" class="menu-item">Доставка</a><a href="#" class="menu-item">Контакты</a></nav>
+        <div class="layout-center">
+          <nav class="menu"><a href="#" class="menu-item">Главная</a><a href="#" class="menu-item">Компания</a><a href="#" class="menu-item">Каталог</a><a href="#" class="menu-item">Новости</a><a href="#" class="menu-item">Спецпредложения</a><a href="#" class="menu-item">Доставка</a><a href="#" class="menu-item">Контакты</a></nav>
+        </div>
       </div>
     </header>
     <main class="main-content">
-      <section class="promo"></section>
-      <section class="popular products"></section>
-      <section class="popular brands"></section>
+      <div class="layout-center">
+        <section class="promo clearfix">
+          <div class="promo-block materials"><span class="promo-block-title">Материалы</span><a href="#" class="btn btn-promo">На любой вкус</a></div>
+          <div class="promo-block tools"><span class="promo-block-title">Инструмент</span><a href="#" class="btn btn-promo">На все случаи</a></div>
+          <div class="promo-block technics"><span class="promo-block-title">Техника</span><a href="#" class="btn btn-promo">Для стройки</a></div>
+          <div class="promo-block slider">
+            <input type="radio" id="promo-btn-1" name="promo-toggle" checked>
+            <input type="radio" id="promo-btn-2" name="promo-toggle">
+            <div class="promo-slider-controls">
+              <label for="promo-btn-1" class="circle-toggle"></label>
+              <label for="promo-btn-2" class="circle-toggle"></label>
+              <label for="promo-btn-1" class="arrow-toggle prev"></label>
+              <label for="promo-btn-2" class="arrow-toggle next"></label>
+            </div>
+            <div class="promo-slider-inner">
+              <div class="promo-slides">
+                <div class="promo-slide">
+                  <h2 class="promo-slide-title">Перфораторы</h2>
+                  <p class="promo-slide-text">Настоящие мужские игрушки</p><a href="catalog.html" class="btn btn-catalog">Открыть каталог</a>
+                </div>
+                <div class="promo-slide">
+                  <h2 class="promo-slide-title">Дрели</h2>
+                  <p class="promo-slide-text">Соседям на радость</p><a href="catalog.html" class="btn btn-catalog">Открыть каталог</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-block discounts"><span class="promo-block-title">Скидки 50%</span><a href="#" class="btn btn-promo">На 350 товаров</a></div>
+          <div class="promo-block delivery"><span class="promo-block-title">Доставка</span><a href="#" class="btn btn-promo">Бесплатно</a></div>
+        </section>
+        <section class="popular products"></section>
+        <section class="popular brands"></section>
+      </div>
       <section class="services"></section>
       <section class="info"></section>
     </main>

@@ -18,27 +18,65 @@ html
           div.header-element.checkout
             a(href="#") Оформить заказ
       div.header-middle-row.clearfix
-        div.left-column
-          p Интернет-магазин строительных материалов и инструментов для ремонта
-        div.center-column
-          div.phone +7 812 555-05-55
-          span.address г.Санкт-Петербург, ул. Б.Конюшенная 19/8
-        div.right-column
-          a.btn.btn-login(href="#") Войти
-          a.btn.btn-register(href="#") Регистрация
+        div.layout-center
+          div.left-column
+            p Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта
+          div.center-column
+            div.phone
+              strong +7 (812) 555-05-55
+            span.address г.Санкт-Петербург, ул. Б.Конюшенная 19/8
+          div.right-column
+            a.btn.btn-login(href="#") Войти
+            a.btn.btn-register(href="#") Регистрация
       div.header-bottom-row
-        nav.menu
-          a.menu-item(href="#") Главная
-          a.menu-item(href="#") Компания
-          a.menu-item(href="#") Каталог
-          a.menu-item(href="#") Новости
-          a.menu-item(href="#") Спецпредложения
-          a.menu-item(href="#") Доставка
-          a.menu-item(href="#") Контакты
+        div.layout-center
+          nav.menu
+            a.menu-item(href="#") Главная
+            a.menu-item(href="#") Компания
+            a.menu-item(href="#") Каталог
+            a.menu-item(href="#") Новости
+            a.menu-item(href="#") Спецпредложения
+            a.menu-item(href="#") Доставка
+            a.menu-item(href="#") Контакты
     main.main-content
-      section.promo
-      section.popular.products
-      section.popular.brands
+      div.layout-center
+        section.promo.clearfix
+          .promo-block.materials
+            span.promo-block-title Материалы
+            a.btn.btn-promo(href="#") На любой вкус
+          .promo-block.tools
+            span.promo-block-title Инструмент
+            a.btn.btn-promo(href="#") На все случаи
+          .promo-block.technics
+            span.promo-block-title Техника
+            a.btn.btn-promo(href="#") Для стройки
+          .promo-block.slider
+            input(type="radio" id="promo-btn-1" name="promo-toggle" checked)
+            input(type="radio" id="promo-btn-2" name="promo-toggle")
+            div.promo-slider-controls
+              label.circle-toggle(for="promo-btn-1")
+              label.circle-toggle(for="promo-btn-2")
+              label.arrow-toggle.prev(for="promo-btn-1")
+              label.arrow-toggle.next(for="promo-btn-2")
+
+            div.promo-slider-inner
+              div.promo-slides
+                div.promo-slide
+                  h2.promo-slide-title Перфораторы
+                  p.promo-slide-text Настоящие мужские игрушки
+                  a.btn.btn-catalog(href="catalog.html") Открыть каталог
+                div.promo-slide
+                  h2.promo-slide-title Дрели
+                  p.promo-slide-text Соседям на радость
+                  a.btn.btn-catalog(href="catalog.html") Открыть каталог
+          .promo-block.discounts
+            span.promo-block-title Скидки 50%
+            a.btn.btn-promo(href="#") На 350 товаров
+          .promo-block.delivery
+            span.promo-block-title Доставка
+            a.btn.btn-promo(href="#") Бесплатно
+        section.popular.products
+        section.popular.brands
       section.services
       section.info
     footer.footer
