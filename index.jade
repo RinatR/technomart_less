@@ -125,8 +125,45 @@ html
               img.brand-item-image(src="img/brands_aeg.jpg", alt="AEG")
             article.brand-item
               img.brand-item-image(src="img/brands_metabo.jpg", alt="Metabo")
-
       section.services
+        div.layout-center
+          h2.section-title Сервисы
+          p.section-text.
+            Хороший интернет магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.
+          div.services-slider.clearfix
+            input(type="radio",id="services-btn-1", name="services-toggle", checked)
+            input(type="radio",id="services-btn-2", name="services-toggle")
+            input(type="radio",id="services-btn-3", name="services-toggle")
+            div.services-slider-tabs
+              label.tab-item(for="services-btn-1") Доставка
+              label.tab-item(for="services-btn-2") Гарантия
+              label.tab-item(for="services-btn-3") Кредит
+            div.services-slider-content
+              div.services-slides
+                .services-slide
+                  h3.services-slide-title Доставка
+                  p.services-slide-text.
+                    Мы с удовольствием доставим ваш товар прямо <br>
+                    к вашему подъезду совершенно бесплатно! <br>
+                    Ведь мы неплохо заработаем, <br>
+                    поднимая его на ваш этаж!
+                .services-slide
+                  h3.services-slide-title Гарантия
+                  p.services-slide-text.
+                    Если купленный у нас товар поломается или заискрит, <br>
+                    а также в случае пожара, спровоцированного его возгоранием,
+                    вы всегда можете быть  уверены в нашей гарантии. Мы обменяем
+                    сгоревший товар на новый. <br>
+                    Дом уже восстановите как нибудь сами.
+                .services-slide
+                  h3.services-slide-title Кредит
+                  p.services-slide-text.
+                    Залезть в долговую яму стало проще! <br>
+                    Кредитные консультанты придут вам на помощь.
+                  a.btn.btn-slider(href="#") Отправить заявку
+
+
       section.info
     footer.footer
       div.footer-top-row
