@@ -460,6 +460,16 @@ h1, h2, h3, p {
       //   border-left: 18px solid #ee3643;
       // }
     }
+
+    &-about {
+      width: 220px;
+      padding: 10px 0;
+    }
+
+    &-contacts {
+      width: 300px;
+      padding: 10px 0;
+    }
   }
 
   .promo {
@@ -802,24 +812,27 @@ h1, h2, h3, p {
     }
   }
 
+  .section-title {
+    margin-bottom: 22px;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .section-text {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
   .services {
     padding-top: 62px;
     margin-bottom: 80px;
     font-family:"PT Sans", "Arial", sans-serif;
     background-color: #f2f6f9;
 
-    .section-title {
-      margin-bottom: 22px;
-      font-size: 30px;
-      font-weight: normal;
-      text-transform: uppercase;
-      color: #000000;
-    }
-
     .section-text {
       margin-bottom: 68px;
-      font-size: 13px;
-      line-height: 24px;
     }
 
     .services-slider {
@@ -948,6 +961,56 @@ h1, h2, h3, p {
             }
           }
         }
+      }
+    }
+  }
+
+  .info {
+
+    .section-title,
+    .section-text {
+      margin-bottom: 26px;
+    }
+
+    .about {
+      float: left;
+      width: 540px;
+
+      .transport-list {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 37px;
+        list-style: none;
+
+        li {
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 20px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 25px;
+            height: 2px;
+            transform:translateY(-50%);
+            background-color: #fb565a;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .contacts {
+      float: right;
+      width: 320px;
+
+      .map {
+        margin-bottom: 40px;
       }
     }
   }

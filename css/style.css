@@ -444,6 +444,14 @@ p {
 .main-content .btn-price:hover {
   background-color: #ee3643;
 }
+.main-content .btn-about {
+  width: 220px;
+  padding: 10px 0;
+}
+.main-content .btn-contacts {
+  width: 300px;
+  padding: 10px 0;
+}
 .main-content .promo {
   margin-bottom: 50px;
 }
@@ -720,23 +728,25 @@ p {
 .main-content .brands .popular-content {
   line-height: 143px;
 }
-.main-content .services {
-  padding-top: 62px;
-  margin-bottom: 80px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  background-color: #f2f6f9;
-}
-.main-content .services .section-title {
+.main-content .section-title {
   margin-bottom: 22px;
   font-size: 30px;
   font-weight: normal;
   text-transform: uppercase;
   color: #000000;
 }
-.main-content .services .section-text {
-  margin-bottom: 68px;
+.main-content .section-text {
   font-size: 13px;
   line-height: 24px;
+}
+.main-content .services {
+  padding-top: 62px;
+  margin-bottom: 80px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #f2f6f9;
+}
+.main-content .services .section-text {
+  margin-bottom: 68px;
 }
 .main-content .services .services-slider input[type="radio"] {
   display: none;
@@ -824,4 +834,43 @@ p {
 }
 .main-content .services .services-slider-content .services-slides .services-slide:last-child {
   background: url("../img/service_slide_credit.png") no-repeat 100% 0;
+}
+.main-content .info .section-title,
+.main-content .info .section-text {
+  margin-bottom: 26px;
+}
+.main-content .info .about {
+  float: left;
+  width: 540px;
+}
+.main-content .info .about .transport-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 37px;
+  list-style: none;
+}
+.main-content .info .about .transport-list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+}
+.main-content .info .about .transport-list li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  transform: translateY(-50%);
+  background-color: #fb565a;
+}
+.main-content .info .about .transport-list li:last-child {
+  margin-bottom: 0;
+}
+.main-content .info .contacts {
+  float: right;
+  width: 320px;
+}
+.main-content .info .contacts .map {
+  margin-bottom: 40px;
 }
