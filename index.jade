@@ -5,7 +5,7 @@ html
     link(rel="stylesheet",  href="css/normalize.css")
     link(rel="stylesheet",  href="css/style.css")
     link(href="https://fonts.googleapis.com/css?family=Cuprum&amp;subset=latin,cyrillic", rel="stylesheet", type="text/css")
-    link(href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,cyrillic",  rel="stylesheet", type="text/css")
+    link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,700", rel="stylesheet", type="text/css")
   body
     header.main-header
       div.header-top-row.clearfix
@@ -76,7 +76,56 @@ html
             span.promo-block-title Доставка
             a.btn.btn-promo(href="#") Бесплатно
         section.popular.products
+          div.popular-header.clearfix
+            h2.popular-header-title Популярные товары
+            a.btn.btn-popular(href="#") Все популярные товары
+          div.popular-content
+            article.product-item
+              div.product-item-image
+                img(src="img/product_2.jpg")
+              h3.product-item-title Перфоратор Bosch BFG 9000
+              span.product-item-old-price 32500 Р.
+              a.btn.btn-price(href="#") 25500 Р.
+            article.product-item
+              div.product-item-image
+                img(src="img/product_2.jpg")
+              h3.product-item-title Перфоратор Bosch BFG 3000
+              span.product-item-old-price 22500 Р.
+              a.btn.btn-price(href="#") 15500 Р.
+            article.product-item
+              div.product-item-image
+                img(src="img/product_2.jpg")
+              h3.product-item-title Перфоратор Bosch BFG 6000
+              span.product-item-old-price 30500 Р.
+              a.btn.btn-price(href="#") 25500 Р.
+            article.product-item
+              div.product-item-image
+                img(src="img/product_2.jpg")
+              h3.product-item-title Перфоратор Bosch BFG 2000
+              span.product-item-old-price 123
+              a.btn.btn-price(href="#") 12500 Р.
         section.popular.brands
+          div.popular-header.clearfix
+            h2.popular-header-title Популярные производители
+            a.btn.btn-popular(href="#") Все производители
+          div.popular-content
+            article.brand-item
+              img.brand-item-image(src="img/brands_bosch.jpg", alt="Bosch")
+            article.brand-item
+              img.brand-item-image(src="img/brands_makita.jpg", alt="Makita")
+            article.brand-item
+              img.brand-item-image(src="img/brands_dewalt.jpg", alt="Dewalt")
+            article.brand-item
+              img.brand-item-image(src="img/brands_interskol.jpg", alt="Interskol")
+            article.brand-item
+              img.brand-item-image(src="img/brands_hitachi.jpg", alt="Hitachi")
+            article.brand-item
+              img.brand-item-image(src="img/brands_lg.jpg", alt="LG")
+            article.brand-item
+              img.brand-item-image(src="img/brands_aeg.jpg", alt="AEG")
+            article.brand-item
+              img.brand-item-image(src="img/brands_metabo.jpg", alt="Metabo")
+
       section.services
       section.info
     footer.footer

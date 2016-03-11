@@ -407,6 +407,7 @@ h1, h2, h3, p {
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 3px;
+    background-color: #ee3643;
 
     &-promo {
       background-color: rgba(0,0,0,0.1);
@@ -427,7 +428,40 @@ h1, h2, h3, p {
       bottom: 20px;
       background-color: #ee3643;
     }
+
+    &-popular {
+      width: 254px;
+      padding: 10px 0;
+      float: right;
+    }
+
+    &-price {
+      position: relative;
+      width: 100px;
+      padding: 10px;
+      margin-bottom: 21px;
+      font-size: 17px;
+      line-height: 18px;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #ee3643;
+      }
+
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   left: 109px;
+      //   width: 0;
+      //   height: 0;
+      //   border-top: 20px solid transparent;
+      //   border-bottom: 18px solid transparent;
+      //   border-left: 18px solid #ee3643;
+      // }
+    }
   }
+
   .promo {
     margin-bottom: 50px;
 
@@ -663,6 +697,102 @@ h1, h2, h3, p {
           }
         }
       }
+    }
+  }
+
+  .popular {
+    margin-bottom: 20px;
+
+    .popular-header {
+      padding: 26px 30px;
+      margin-bottom: 20px;
+      background-color:  #f7f3ec;
+
+      &-title {
+        float: left;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #32425c;
+      }
+    }
+
+    .popular-content {
+      font-size: 0;
+    }
+
+    .product-item {
+      display: inline-block;
+      vertical-align: top;
+      width: 218px;
+      margin-right: 20px;
+      font-family: "PT Sans", "Arial", sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: bold;
+      text-align: center;
+      border: 1px solid #e5e5e5;
+
+      &:last-child {
+        position: relative;
+        margin-right: 0;
+
+        .product-item-old-price {
+          visibility: hidden;
+        }
+
+        &:before {
+          .new-label;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+      }
+
+      &-image {
+        padding-top: 21px;
+      }
+
+      &-title {
+        margin: 0 30px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      &-old-price {
+        display: block;
+        margin-bottom: 13px;
+        font-size: 17px;
+        line-height: 18px;
+        text-decoration: line-through;
+        color: #999999;
+      }
+    }
+
+    .brand-item {
+      display: inline-block;
+      vertical-align: top;
+      width: 218px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      border: 1px solid #e5e5e5;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+      &-image {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .brands {
+    .popular-content {
+      line-height: 143px;
     }
   }
 }
